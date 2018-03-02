@@ -2,13 +2,13 @@ public class Hello {
     public static void helloWorld(){
         //设置日期
         Calendar c = Calendar.getInstance();
-        c.set(Calendar.YEAR,2018);
-        c.set(Calendar.MONTH,2);
-        c.set(Calendar.DAY_OF_MONTH,2);
-        c.set(Calendar.HOUR_OF_DAY,15);
-        c.set(Calendar.MINUTE,50);
-        c.set(Calendar.SECOND,10);
-        final Date time = c.getTime();
+        c.set(1,2018);
+		c.set(2,2);
+		c.set(5,2);
+		c.set(11,23);
+		c.set(12,59);
+		c.set(13,59);
+        Date time = c.getTime();
 
         //开启任务
         new Timer("timer - helloworld").schedule(new TimerTask() {
